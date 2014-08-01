@@ -7,8 +7,7 @@ html
   body
     h2 
       a(href="/") go back
-    #temp
-      p #{temp} F
+    #temp #{temp} F
     #thermback
       - var tempheight = temp *2
       #therm(style="width:50px; height: #{tempheight}px; background-color:#{tempColor};")
