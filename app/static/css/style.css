@@ -1,0 +1,21 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,900);
+
+#temp{
+  font-family: 'Raleway', sans-serif;
+  font-size: 25px;
+}
+
+#thermback{
+  width : 50px;
+  height : 200px;
+  background-color:grey;
+  display: inline-block;
+  position:relative;
+  border: 2px solid black;
+}
+
+#therm{
+
+  position:absolute;
+  bottom: 0px;
+}

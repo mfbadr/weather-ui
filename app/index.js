@@ -41,7 +41,20 @@ app.post('/', function (req, res){
   getTemp( url, function(x){
     temp =  x;
     console.log(temp);
-    res.render('weather', {temp:temp, zip:zip} );
+    var tempColor;
+    temp = parseInt(temp);
+    if (temp < 32){ 
+      tempColor = 'blue';
+    }else if(temp < 70 ){ 
+      tempColor = 'green';
+    }else if(temp < 80){
+      tempColor = 'yellow';
+    }else if(temp < 95){
+      tempColor = 'orange';
+    }else {tempColor = 'red';
+    }
+    
+    res.render('weather', {temp:temp, zip:zip, tempColor:tempColor} );
   });
 
   
