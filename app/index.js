@@ -42,7 +42,7 @@ app.post('/', function (req, res){
     temp =  x;
     console.log(temp);
     var tempColor;
-    temp = parseInt(temp);
+    temp = parseFloat(temp);
     if (temp < 32){ 
       tempColor = 'blue';
     }else if(temp < 70 ){ 

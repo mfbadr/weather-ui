@@ -1,11 +1,15 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,900);
 
+formi{
+
+}
+
 #temp{
   font-family: 'Raleway', sans-serif;
-  font-size: 50px;
+  font-size: 150px;
   display: inline-block;
   position:relative;
-  bottom: 150px;
+  bottom: 100px;
 }
 
 #thermback{
